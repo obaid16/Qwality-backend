@@ -51,9 +51,22 @@ class ProductService {
     }
 
     if (filters.minPrice || filters.maxPrice) {
-      query.price = {};
-      if (filters.minPrice) query.price.$gte = Number(filters.minPrice);
-      if (filters.maxPrice) query.price.$lte = Number(filters.maxPrice);
+      const min = filters.minPrice ? Number(filters.minPrice) : 0;
+      const max = filters.maxPrice ? Number(filters.maxPrice) : Infinity;
+
+      query.$or = [
+        {
+          salePrice: { $gt: 0, $gte: min, ...(max !== Infinity && { $lte: max }) }
+        },
+        {
+          $or: [
+            { salePrice: { $exists: false } },
+            { salePrice: 0 },
+            { salePrice: null }
+          ],
+          price: { $gte: min, ...(max !== Infinity && { $lte: max }) }
+        }
+      ];
     }
 
     if (filters.isFeatured !== undefined) {

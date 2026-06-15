@@ -116,6 +116,13 @@ class CartService {
     await cart.save();
     return await cart.populate("items.product");
   }
+
+  async clearCart(userId) {
+    const cart = await this.getCart(userId);
+    cart.items = [];
+    await cart.save();
+    return cart;
+  }
 }
 
 module.exports = new CartService();
