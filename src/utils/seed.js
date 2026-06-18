@@ -6,7 +6,7 @@ const Product = require("../models/Product");
 
 const categoriesData = [
   { name: "Classic Snapbacks", slug: "classic-snapbacks", image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop" },
-  { name: "Luxury Dad Hats", slug: "luxury-dad-hats", image: "https://images.unsplash.com/photo-1534215754734-18e55d13e346?q=80&w=600&auto=format&fit=crop" },
+  { name: "Luxury Dad Hats", slug: "luxury-dad-hats", image: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&auto=format&fit=crop" },
   { name: "Athletic Caps", slug: "athletic-caps", image: "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?q=80&w=600&auto=format&fit=crop" },
 ];
 
@@ -84,7 +84,7 @@ const seedDB = async () => {
           salePrice: 39.99,
           images: [
             "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1534215754734-18e55d13e346?q=80&w=600&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&auto=format&fit=crop"
           ],
           tags: ["Navy", "Gold", "Snapback", "Classic"],
           variants: [
@@ -124,7 +124,7 @@ const seedDB = async () => {
           price: 48.0,
           salePrice: 0,
           images: [
-            "https://images.unsplash.com/photo-1534215754734-18e55d13e346?q=80&w=600&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&auto=format&fit=crop"
           ],
           tags: ["Navy", "Classic", "Premium"],
           variants: [
