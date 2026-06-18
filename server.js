@@ -43,6 +43,15 @@ const limiter = rateLimit({
 });
 app.use("/api", limiter);
 
+// Root Route (required for Render health checks / browser preview)
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "success",
+    message: "Quality Caps backend API is live",
+    timestamp: new Date(),
+  });
+});
+
 // Basic Health Check Route
 app.get("/health", (req, res) => {
   res.status(200).json({
