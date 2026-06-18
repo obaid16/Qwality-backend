@@ -5,7 +5,7 @@ const asyncHandler = require("../utils/asyncHandler");
 const cookieOptions = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
-  sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
+  sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
 };
 
 const register = asyncHandler(async (req, res) => {
