@@ -43,7 +43,7 @@ const seedDB = async () => {
         name: "Premium Caps",
         slug: "premium-caps",
         parentCategory: null,
-        image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?q=80&w=600&auto=format&fit=crop",
       });
     }
 
@@ -84,7 +84,7 @@ const seedDB = async () => {
           salePrice: 39.99,
           images: [
             "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=600&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1521369909029-2afed882baee?q=80&w=600&auto=format&fit=crop"
           ],
           tags: ["Navy", "Gold", "Snapback", "Classic"],
           variants: [
@@ -144,7 +144,7 @@ const seedDB = async () => {
           price: 50.0,
           salePrice: 45.0,
           images: [
-            "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=600&auto=format&fit=crop"
           ],
           tags: ["Athletic", "Sport", "Gold", "Performance"],
           variants: [
